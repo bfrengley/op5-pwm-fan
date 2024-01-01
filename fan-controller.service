@@ -1,0 +1,10 @@
+[Unit]
+Description=A PWM fan controller to automatically adjust the fan speed in proportion with the current CPU temperature
+
+[Service]
+ExecStart=/usr/bin/op5-pwm-fan
+Restart=always
+
+[Install]
+WantedBy=default.target
+
